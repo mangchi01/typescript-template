@@ -1,0 +1,27 @@
+{
+  "name": "gulbee-player",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn webpack",
+    "run-pub": "node dist/bundle.js",
+    "run-dev": "ts-node -r tsconfig-paths/register src/index.ts",
+    "watch": "nodemon --ext ts,json --ignore src/**/*.spec.ts --delay 2s --exec ts-node -r tsconfig-paths/register src/index.ts"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.13",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.3.0",
+    "tsconfig-paths": "^3.11.0",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "typescript": "^4.4.4",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0"
+  },
+  "dependencies": {}
+}
